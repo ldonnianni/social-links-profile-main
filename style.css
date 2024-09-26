@@ -42,7 +42,7 @@ body{
     border-radius: 50px;
 }
 
-.user-card .user-info h2 {
+.user-card .user-info h1 {
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 600;
@@ -66,20 +66,37 @@ body{
     gap: 1rem
 }
 
-.user-socials .btn-socials {
-    color: var(--white);
+.user-card .user-socials .socials-link {
+    list-style-type: none;
+    text-align: center;
     background-color: var(--grey700);
     border: none;
     border-radius: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.87rem;
     font-weight: 600;
-    padding: 1rem;
+    margin: 0;
+    
     cursor: pointer;
 }
-.btn-socials:hover{
+.user-card .user-socials .socials-link a{
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    text-decoration: none;  
+    padding: 1rem;
+    color: var(--white);    
+}
+
+.user-card .user-socials .socials-link:hover {
     background-color: var(--green);
-    color:var(--grey900);
-} 
+   
+}   
+
+.user-card .user-socials .socials-link a:hover{
+    color: var(--grey900);
+}
+
+
 
 .attribution {
     position: fixed;
